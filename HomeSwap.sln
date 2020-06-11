@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeSwap.BusinessRules", "HomeSwap.BusinessRules\HomeSwap.BusinessRules.csproj", "{6AE5E221-DEAE-457B-80CF-3E692CAAC6BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AE5E221-DEAE-457B-80CF-3E692CAAC6BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AE5E221-DEAE-457B-80CF-3E692CAAC6BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AE5E221-DEAE-457B-80CF-3E692CAAC6BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AE5E221-DEAE-457B-80CF-3E692CAAC6BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5D30B46-A554-4C2E-8865-2CC9170646BB}
+	EndGlobalSection
+EndGlobal
