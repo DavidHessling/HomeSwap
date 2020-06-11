@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeSwap.BusinessRules", "HomeSwap.BusinessRules\HomeSwap.BusinessRules.csproj", "{6AE5E221-DEAE-457B-80CF-3E692CAAC6BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeSwap.Core", "HomeSwap.BusinessRules\HomeSwap.Core.csproj", "{6AE5E221-DEAE-457B-80CF-3E692CAAC6BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{531CD1BD-4F8B-4139-ADA2-A6420CF1B7E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A00D38F0-8CA0-4955-8EE5-7DF36C090B5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{F1904939-3E3E-4997-8E80-832B458C5574}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{5A2090D7-50C6-4010-8EE1-8A81903251FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +26,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6AE5E221-DEAE-457B-80CF-3E692CAAC6BD} = {5A2090D7-50C6-4010-8EE1-8A81903251FE}
+		{F1904939-3E3E-4997-8E80-832B458C5574} = {531CD1BD-4F8B-4139-ADA2-A6420CF1B7E7}
+		{5A2090D7-50C6-4010-8EE1-8A81903251FE} = {F1904939-3E3E-4997-8E80-832B458C5574}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A5D30B46-A554-4C2E-8865-2CC9170646BB}
