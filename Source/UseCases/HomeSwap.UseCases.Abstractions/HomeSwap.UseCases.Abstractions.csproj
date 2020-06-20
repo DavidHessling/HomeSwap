@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="Home\Commands\" />
-    <Folder Include="Home\Queries\" />
     <Folder Include="Tenant\Commands\" />
     <Folder Include="Tenant\Queries\" />
   </ItemGroup>

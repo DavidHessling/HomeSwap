@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\..\Source\PrimaryAdapters\Api\HomeSwap.Api\HomeSwap.PrimaryAdapters.Api.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Source\UseCases\HomeSwap.UseCases.Abstractions\HomeSwap.UseCases.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>
