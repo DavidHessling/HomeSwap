@@ -36,14 +36,21 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeSwap.BusinessModels", "Source\BusinessModels\HomeSwap.Core.Models\HomeSwap.BusinessModels.csproj", "{7DB9A77A-8458-4709-9783-A510BC08E318}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeSwap.UseCases", "Source\UseCases\HomeSwap.UseCases\HomeSwap.UseCases.csproj", "{3C167A1E-C428-45C3-8899-91622668889B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8256122F-FC5C-4D20-A66C-632F5BB8BFCC} = {8256122F-FC5C-4D20-A66C-632F5BB8BFCC}
+		{092DC24E-2264-4592-9EE6-F24B1DA8864E} = {092DC24E-2264-4592-9EE6-F24B1DA8864E}
+		{7DB9A77A-8458-4709-9783-A510BC08E318} = {7DB9A77A-8458-4709-9783-A510BC08E318}
+		{9CE43A81-D776-447B-AFA3-243ADC695F7D} = {9CE43A81-D776-447B-AFA3-243ADC695F7D}
+		{2DE94F8F-C3AD-47C9-8602-8E4E79E33D2B} = {2DE94F8F-C3AD-47C9-8602-8E4E79E33D2B}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 SecondaryAdapters", "5 SecondaryAdapters", "{E36982F6-201E-41FC-99BD-B89FB528D6E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeSwap.SecondaryAdapters.SqlDatabase", "Source\SecondaryAdapter\SqlDatabase\HomeSwap.SecondaryAdapters.SqlDatabase\HomeSwap.SecondaryAdapters.SqlDatabase.csproj", "{2DE94F8F-C3AD-47C9-8602-8E4E79E33D2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeSwap.SecondaryAdapters.SqlDatabase", "Source\SecondaryAdapter\SqlDatabase\HomeSwap.SecondaryAdapters.SqlDatabase\HomeSwap.SecondaryAdapters.SqlDatabase.csproj", "{2DE94F8F-C3AD-47C9-8602-8E4E79E33D2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeSwap.BusinessModels.Abstractions", "Source\BusinessModels\HomeSwap.BusinessModels.Abstractions\HomeSwap.BusinessModels.Abstractions.csproj", "{8256122F-FC5C-4D20-A66C-632F5BB8BFCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeSwap.BusinessModels.Abstractions", "Source\BusinessModels\HomeSwap.BusinessModels.Abstractions\HomeSwap.BusinessModels.Abstractions.csproj", "{8256122F-FC5C-4D20-A66C-632F5BB8BFCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeSwap.UseCases.Abstractions", "Source\UseCases\HomeSwap.UseCases.Abstractions\HomeSwap.UseCases.Abstractions.csproj", "{F54B3FFE-8B0D-45B3-84FE-7A83E9A5851F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HomeSwap.UseCases.Abstractions", "Source\UseCases\HomeSwap.UseCases.Abstractions\HomeSwap.UseCases.Abstractions.csproj", "{F54B3FFE-8B0D-45B3-84FE-7A83E9A5851F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,10 +1,7 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
 using System.Threading.Tasks;
 using HomeSwap.Api.Controllers;
-using HomeSwap.Api.Dtos;
-using HomeSwap.UseCases.Abstractions.Home.Queries;
+using HomeSwap.UseCases.Abstractions.Home.Queries.GetHomes;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
@@ -17,7 +14,7 @@ namespace HomeSwap.Api.Tests.Controllers
     {
         private HomeController _homeController;
         private readonly Mock<IMediator> _mediatorMock = new Mock<IMediator>();
-        private readonly Mock<IGetHomesQuery> _queryMock =  new Mock<IGetHomesQuery>();
+        private readonly Mock<IGetHomesQueryRequest> _queryMock =  new Mock<IGetHomesQueryRequest>();
 
         [SetUp]
         public void Setup()

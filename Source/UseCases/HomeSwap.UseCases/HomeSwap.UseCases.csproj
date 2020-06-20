@@ -5,9 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Home\Commands\" />
-    <Folder Include="Home\Queries\" />
-    <Folder Include="Tenant\Queries\" />
+    <Folder Include="UseCases\Home\Commands\" />
+    <Folder Include="UseCases\Tenant\Commands\" />
+    <Folder Include="UseCases\Tenant\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HomeSwap.UseCases.Abstractions\HomeSwap.UseCases.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using HomeSwap.UseCases.Abstractions.Home.Queries;
+using HomeSwap.UseCases.Abstractions.Home.Queries.GetHomes;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,9 +9,9 @@ namespace HomeSwap.Api.Controllers
     public class HomeController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly IGetHomesQuery _getHomesQuery;
+        private readonly IGetHomesQueryRequest _getHomesQuery;
 
-        public HomeController(IMediator mediator, IGetHomesQuery getHomesQuery)
+        public HomeController(IMediator mediator, IGetHomesQueryRequest getHomesQuery)
         {
             _mediator = mediator;
             _getHomesQuery = getHomesQuery;

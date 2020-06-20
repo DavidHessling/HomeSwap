@@ -5,9 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Home\Commands\" />
-    <Folder Include="Tenant\Commands\" />
-    <Folder Include="Tenant\Queries\" />
+    <Folder Include="UseCases\Home\Commands\" />
+    <Folder Include="UseCases\Tenant\Commands\" />
+    <Folder Include="UseCases\Tenant\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessModels\HomeSwap.BusinessModels.Abstractions\HomeSwap.BusinessModels.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>
