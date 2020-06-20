@@ -1,10 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using HomeSwap.Api.Controllers;
-using HomeSwap.Api.Models;
+using HomeSwap.Api.Dtos;
+using HomeSwap.Application.PrimaryPorts.Queries.Abstractions;
+using HomeSwap.Core.Models;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Moq;
 using NUnit.Framework;
+using NUnit.Framework.Constraints;
 
 namespace HomeSwap.Api.Tests.Controllers
 {
@@ -12,11 +18,13 @@ namespace HomeSwap.Api.Tests.Controllers
     public class HomeControllerTests
     {
         private HomeController _homeController;
+        private readonly Mock<IMediator> _mediatorMock = new Mock<IMediator>();
+        private readonly Mock<IGetHomesQuery> _queryMock =  new Mock<IGetHomesQuery>();
 
         [SetUp]
         public void Setup()
         {
-            _homeController = new HomeController();
+            _homeController = new HomeController(_mediatorMock.Object, _queryMock.Object);
         }
 
         [Test]
@@ -40,6 +48,9 @@ namespace HomeSwap.Api.Tests.Controllers
         public async Task GetHomes_Returns_A_List_Of_HomeDtos()
         {
             // Act
+            _mediatorMock.Setup(x => x.Send(It.IsAny<IRequest<IEnumerable<HomeDto>>>(), It.IsAny<CancellationToken>()))
+                .Returns(Task.FromResult(new List<Home>()));
+            //.ReturnsAsync(new List<HomeDto>());
             var result = await _homeController.GetHomesAsync() as OkObjectResult;
 
             // Assert

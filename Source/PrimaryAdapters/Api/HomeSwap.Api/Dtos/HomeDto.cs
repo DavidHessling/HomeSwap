@@ -1,4 +1,4 @@
-﻿namespace HomeSwap.Api.Models
+﻿namespace HomeSwap.Api.Dtos
 {
     public class HomeDto
     {

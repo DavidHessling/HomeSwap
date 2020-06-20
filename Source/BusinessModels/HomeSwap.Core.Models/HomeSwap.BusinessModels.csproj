@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
-    <Folder Include="Queries\" />
+    <ProjectReference Include="..\HomeSwap.BusinessModels.Abstractions\HomeSwap.BusinessModels.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>
